@@ -14,6 +14,6 @@ public class XpathFactoryEndpoint {
 
   @GET
   public String getXpathFactoryImplName() {
-    return XPathFactory.newInstance().getClass().getCanonicalName();
+    return XPathFactory.newInstance().getClass().getCanonicalName().replace("XPath", "X-Path");
   }
 }
